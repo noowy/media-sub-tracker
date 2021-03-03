@@ -1,0 +1,19 @@
+mat-card img{
+    // object-fit: cover; 
+    // width: 50%; 
+    // height: 50%;
+    padding: 20px;
+    object-fit: scale-down;
+}
+
+::ng-deep .mat-card-header-text {
+    margin: 0 0 !important; 
+}
+
+.active {
+    background: #8c5ff5;
+}
+
+.button_main {
+    background: #d0bff7;
+}

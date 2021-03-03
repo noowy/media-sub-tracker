@@ -1,18 +1,23 @@
 <div class="container"
     fxFlex 
     fxLayout="row wrap"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
     fxLayoutAlign="center center"
 >
-<mat-card *ngFor="let sub of subscriptions" fxFlex="30">
-    <mat-card-header>
+<mat-card *ngFor="let sub of subscriptions" fxFlex="30" fxFlexAlign="stretch" fxLayout="column" fxLayoutAlign="center center">
+    <!-- <mat-card-header fxFlex="20">
         <h3>{{sub.name}}</h3>
-    </mat-card-header>
-    <mat-card-content>
-        <img src={{sub.image}} alt={{sub.name}} height="100px" >
+    </mat-card-header> -->
+    <mat-card-content fxLayoutAlign="center center" fxFlex="50">
+        <img mat-card-image src={{sub.image}} alt={{sub.name}} fxFill>
     </mat-card-content>
-    <mat-card-actions>
-        <a mat-button href={{sub.subUrl}}>Subscribe</a>
-        <a mat-button href={{sub.unsubUrl}}>Unsubscribe</a>
+    <mat-card-actions fxFlex="20">
+        <div *ngIf="sub.available">
+            <a mat-button class="button_main" href={{sub.subUrl}}>Subscribe</a>
+            <a mat-button class="button_main" href={{sub.unsubUrl}}>Unsubscribe</a>
+        </div>
+        <span *ngIf="!sub.available">Better luck next time, still unavailable</span>
     </mat-card-actions>
 </mat-card>
 </div>

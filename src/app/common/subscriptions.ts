@@ -26,8 +26,8 @@ export const SUBSCRIPTIONS: Subscription[] = [
         'name': 'Apple TV+',
         'vendor': 'Apple',
         'image': '/assets/vendor_logos/apple_tv_plus.png',
-        'subUrl': '',
-        'unsubUrl': '',
+        'subUrl': 'https://tv.apple.com/settings',
+        'unsubUrl': 'https://tv.apple.com/settings',
         'available': true,
         'description': ''
     },
@@ -53,12 +53,42 @@ export const SUBSCRIPTIONS: Subscription[] = [
     },
     {
         'id': 5,
-        'name': 'HBO+',
+        'name': 'HBO Max',
         'vendor': 'HBO',
-        'image': '/assets/vendor_logos/hbo_plus.png',
+        'image': '/assets/vendor_logos/hbo_max.svg',
         'subUrl': '',
         'unsubUrl': '',
         'available': false,
         'description': ''
+    },
+    {
+        'id': 6,
+        'name': 'YouTube TV',
+        'vendor': 'Youtube',
+        'image': '/assets/vendor_logos/youtube_tv.png',
+        'subUrl': '',
+        'unsubUrl': '',
+        'available': false,
+        'description': ''
+    },
+    {
+        'id': 7,
+        'name': 'Peacock',
+        'vendor': 'NBC',
+        'image': '/assets/vendor_logos/peacock.png',
+        'subUrl': '',
+        'unsubUrl': '',
+        'available': false,
+        'description': ''
+    },
+    {
+        'id': 8,
+        'name': 'Crunchyroll',
+        'vendor': 'Sony',
+        'image': '/assets/vendor_logos/crunchyroll.png',
+        'subUrl': 'https://www.crunchyroll.com/acct/membership',
+        'unsubUrl': 'https://www.crunchyroll.com/acct/membership',
+        'available': true,
+        'description': '',
     }
 ]
